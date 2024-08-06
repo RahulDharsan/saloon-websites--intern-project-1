@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            position: relative;
+            min-height: 100vh;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0a6107;
+        }
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #dff0d8;
+            color: #3c763d;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <main id="booking">
+        <h2>Appointment Booking</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
+            <input type="hidden" name="access_key" value="67e0fe4e-e55a-4fbe-a398-de24e8151b17">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a Service</option>
+                    <option value="hair_cut">Hair Cut</option>
+                    <option value="facial">Facial</option>
+                    <option value="massage">Massage</option>
+                    <option value="mani_pedi">Manicure & Pedicure</option>
+                    <option value="waxing">Waxing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Notes:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div class="success-message" id="success-message">
+            Your appointment has been successfully booked!
+        </div>
+    </main>
+    
+   
+</body>
+</html>

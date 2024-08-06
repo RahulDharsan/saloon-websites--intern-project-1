@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Salon & Spa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #444;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        .hero {
+            background: url('https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/05/about-3.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .address{
+            text-align: center;
+            background-color:rgb(217, 126, 34);
+        }
+        .slider {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slideAnimation 10s infinite;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Animation to cycle through slides */
+@keyframes slideAnimation {
+    
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(-300%); }
+}
+footer{
+    text-align: center;
+    color:#333;
+}
+
+ </style>
+</head>
+<body>
+    <header>
+        <h1> R V Salon & Spa</h1>
+        <nav>
+            <ul>
+                <li><a href="home page.html">Home</a></li>
+                <li><a href="about page .html">About Us</a></li>
+                <li><a href="service page.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Welcome to Our Salon & Spa</h1>
+            <p>Experience the best in beauty and wellness.</p>
+        </div>
+    </div>
+
+    <main>
+        <h2>Our Services</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://menshaircuts.com/wp-content/uploads/2024/06/tp-best-haircuts-for-men-500x333.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="https://thumbs.dreamstime.com/z/mud-facial-mask-men-spa-salon-massage-clay-full-face-girl-therapy-room-man-lying-spa-bed-beautician-103315687.jpg?w=768" alt=" Image 2">
+                </div>
+                <div class="slide">
+                    <img src="https://media.gq-magazine.co.uk/photos/5e0dea2783ac020008511cc3/16:9/w_1280,c_limit/HAIRDYE_.jpg" alt="Image 3">
+                </div>
+                <div class="slide">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyigyuVzFHY9Sf0uw03PEvBVpqcaSo5Km4ag&s" alt="Image 4"
+              </div>
+               </div>
+        </div>
+           <div class="address">
+            <h2>Our Location</h2>
+            <p>SATHY ROAD NEAR D MART </p>
+            <p>Phone: 945647890</p>
+            <p>Email: rv@salonspagmail.com</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salon & Spa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
